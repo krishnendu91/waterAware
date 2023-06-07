@@ -33,6 +33,11 @@
 		justify-content: center;
 		margin-top: -50px;
 	  }
+	  .network {
+		display: flex;
+		justify-content: right;
+		margin-top: -50px;
+	  }
 	  .imgclass {
 	  	display: block;
 		margin-left: auto;
@@ -146,6 +151,16 @@ function indexClicked(){
     }
 }
 </script>
+<script>
+function networkClicked(src, width, height, alt){
+    var img = document.createElement("img");
+    img.src = src;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
+    document.body.appendChild(img);
+}
+</script>
 <body>
  <img src="banner.jpg", alt="dsp banner",width="180", height="220">  
  <font color="#C12C6A">
@@ -222,6 +237,13 @@ function indexClicked(){
 	</form>
         
     </div>
+    <div class="network">
+     <button style="background-color:#13929A;border-color:grey;color:white" onclick=
+    "networkClicked('https://github.com/AmritaWNAOfficial/waterAware/blob/main/network1.png?raw=true', 
+                 550, 
+                 550, 
+                 'fig1');">Recommendations and Alerts on Network Operations</button> 
+    </div> 
     <div id="div"></div>
         <script src="options.js"></script>
         <link rel="stylesheet" href="dropdown.css">
