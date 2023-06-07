@@ -1,0 +1,156 @@
+<html>
+ <head>
+
+  <title>WATER QUALITY</title>
+  <style>
+      html * {
+	font-size:20px;
+        font-family: Calibri;
+      }
+    </style>
+ </head>
+<style>
+.button {
+  background-color: #13929A; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<script type="text/javascript" language="javascript">
+function optionClicked(){
+    let userPicked = document.getElementById("list").value;
+    var div = document.getElementById("div");
+    if(userPicked == 'one'){
+        div.innerHTML = "Water Quality Index:77.39<br><br>Water Quality Category:Very poor<br><br>Contaminants:pH,TH,Coliform<br><br>Possible Treatment Methods:Addition of NaOH, RO, Chlorination";
+    }else if(userPicked == 'two'){
+        div.innerHTML = "Water Quality Index:7.68<br><br>Water Quality Category:Excellent<br><br>Contaminants:pH<br><br>Possible Treatment Methods:Addition of NaOH";
+    }else if(userPicked == 'three'){
+        div.innerHTML = "Water Quality Index:29.64<br><br>Water Quality Category:Good<br><br>Contaminants:pH, Turbidity, E.coli<br><br>Possible Treatment Methods:Addition of NaOH, Sedimentation, Chlorination";
+    }else if(userPicked == 'four'){
+        div.innerHTML = "Water Quality Index:8.07<br><br>Water Quality Category:Excellent<br><br>Contaminants:Turbidity<br><br>Possible Treatment Methods:Sedimentation";
+    }else if(userPicked == 'five'){
+        div.innerHTML = "Water Quality Index:104.71<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:E.coli<br><br>Possible Treatment Methods:Chlorination";
+    }else if(userPicked == 'six'){
+        div.innerHTML = "Water Quality Index:30.59<br><br>Water Quality Category:Good<br><br>Contaminants:pH, E.coli<br><br>Possible Treatment Methods:Addition of NaOH, Chlorination";
+    }else if(userPicked == 'seven'){
+        div.innerHTML = "Water Quality Index:672.20<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:Turbidity, E.coli<br><br>Possible Treatment Methods:Sedimentation";
+    }else if(userPicked == 'eight'){
+        div.innerHTML = "Water Quality Index:6.44<br><br>Water Quality Category:Excellent<br><br>Contaminants:No treatment";
+    }else if(userPicked == 'nine'){
+        div.innerHTML = "Water Quality Index:46.34<br><br>Water Quality Category:Good<br><br>Contaminants:Turbidity, E.coli<br><br>Possible Treatment Methods:Sedimentation, Chlorination";
+    }else if(userPicked == 'ten'){
+        div.innerHTML = "Water Quality Index:656.86<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:E.coli<br><br>Possible Treatment Methods:Chlorination";
+    
+    }else if(userPicked == 'op1'){
+        div.innerHTML = "Water Quality Index:227.59<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:E.coli<br><br>Possible Treatment Methods:Chlorination";
+    }else if(userPicked == 'op2'){
+        div.innerHTML = "Water Quality Index:659.40<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:E.coli<br><br>Possible Treatment Methods:Chlorination";
+    }else if(userPicked == 'op3'){
+        div.innerHTML = "Water Quality Index:431.18<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:pH, E.coli<br><br>Possible Treatment Methods:Addition of NaOH, Chlorination";
+    }else if(userPicked == 'op4'){
+        div.innerHTML = "Water Quality Index:238.48<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:pH, E.coli<br><br>Possible Treatment Methods:Addition of NaOH, Chlorination";
+    }else if(userPicked == 'op5'){
+        div.innerHTML = "Water Quality Index:662.16<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:pH, E.coli<br><br>Possible Treatment Methods:Addition of NaOH, Chlorination";
+    }else if(userPicked == 'op6'){
+        div.innerHTML = "Water Quality Index:689.13<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:Turbidity,Fluoride, E.coli<br><br>Possible Treatment Methods:RO, Chlorination";
+    }else if(userPicked == 'op7'){
+        div.innerHTML = "Water Quality Index:676.16<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:TDS, Chloride, Hardness, E.coli<br><br>Possible Treatment Methods:RO, Chlorination";
+    }else if(userPicked == 'op8'){
+        div.innerHTML = "Water Quality Index:146.92<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:TDS, Chloride, Hardness, E.coli<br><br>Possible Treatment Methods:RO, Chlorination";
+   
+
+    }else if(userPicked == 'bo1'){
+        div.innerHTML = "Water Quality Index:13.66<br><br>Water Quality Category:Excellent<br><br>Contaminants:pH, TH<br><br>Possible Treatment Methods:Addition of NaOH, RO";
+    }else if(userPicked == 'bo2'){
+        div.innerHTML = "Water Quality Index:18.88<br><br>Water Quality Category:Excellent<br><br>Contaminants:TDS, Turbidity, Alkalinity, Hardness<br><br>Possible Treatment Methods:Sedimentation RO";
+    }else if(userPicked == 'bo3'){
+        div.innerHTML = "Water Quality Index:88.62<br><br>Water Quality Category:Very Poor<br><br>Contaminants:pH,Turbidity, Hardness<br><br>Possible Treatment Methods:Addition of NaOH, RO, Sedimentation";
+    }else if(userPicked == 'bo4'){
+        div.innerHTML = "Water Quality Index:69.69<br><br>Water Quality Category:Poor<br><br>Contaminants:pH,Turbidity, Hardness<br><br>Possible Treatment Methods:Addition of NaOH, RO, Sedimentation";
+    }else if(userPicked == 'bo5'){
+        div.innerHTML = "Water Quality Index:198.30<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:pH, Turbidity, Nitrate, Alkalinity, Hardness, Ecoli<br><br>Possible Treatment Methods:Addition of NaOH, RO, Sedimentation, Chlorination";
+    }else if(userPicked == 'bo6'){
+        div.innerHTML = "Water Quality Index:671.47<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:pH, Turbidity, E.coli<br><br>Possible Treatment Methods:Addition of NaOH, Sedimentation, Chlorination";
+    }else if(userPicked == 'bo7'){
+        div.innerHTML = "Water Quality Index:23.96<br><br>Water Quality Category:Excellent<br><br>Contaminants:Hardness<br><br>Possible Treatment Methods:RO";
+    }else if(userPicked == 'bo8'){
+        div.innerHTML = "Water Quality Index:679.54<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:TDS, Turbidity, Alkalinity, Hardness<br><br>Possible Treatment Methods:Sedimentation, RO, Chlorination";
+    }else if(userPicked == 'bo9'){
+        div.innerHTML = "Water Quality Index:24.06<br><br>Water Quality Category:Excellent<br><br>Contaminants:TDS, Turbidity, Alkalinity, Hardness<br><br>Possible Treatment Methods:Sedimentation, RO, Chlorination";
+    }else if(userPicked == 'bo10'){
+        div.innerHTML = "Water Quality Index:357.59<br><br>Water Quality Category:Unsuitable<br><br>Contaminants:pH, TDS, Turbidity, Alkalinity, Hardness, E.coli<br><br>Possible Treatment Methods:Sedimentation, RO, chlorination, Addition of NaOH";
+    
+	
+    }else{
+        alert("You must pick an option.");
+    }
+}
+</script>
+<body>
+ <img src="https://github.com/AmritaWNAOfficial/waterAware/blob/main/banner.png?raw=true", alt="dsp banner",width="180", height="220"> 
+ <img style="float: right;"src="https://github.com/AmritaWNAOfficial/waterAware/blob/main/bg.drawio.png?raw=true", alt="dsp banner",width="260", height=100%> 
+ <font color="#C12C6A">
+ <div><h1 style="font-size:30px;">WATER QUALITY</h1></div><br/>
+ <img src="https://github.com/AmritaWNAOfficial/waterAware/blob/main/stat%20diagram.png?raw=true", alt="dsp stat",width="70", height="100"> 
+ </font>
+ <div class="dropdown">
+        <form>
+	<label for="list"><b>Sources</label>
+        <select name="list" id="list" accesskey="target">
+         <option value="none">Pick a Source</option>
+	 <optgroup label="Pipeline">
+            <option value="none">Pick a Pipeline</option>
+            <option value="one">P1</option>
+            <option value="two">P2</option>
+            <option value="three">P3</option>
+            <option value="four">P4</option>
+	    <option value="five">P5</option>
+	    <option value="six">P6</option>
+	    <option value="seven">P7</option>
+	    <option value="eight">P8</option>
+	    <option value="nine">P9</option>
+	    <option value="ten">P10</option> 
+         </optgroup>
+         <optgroup label="OpenWell">
+         <option value="none">Pick an OpenWell</option>
+            <option value="op1">O1</option>
+            <option value="op2">O2</option>
+            <option value="op3">O3</option>
+	    <option value="op4">O4</option>
+	    <option value="op5">O5</option>
+	    <option value="op6">O6</option>
+	    <option value="op7">O7</option>
+	    <option value="op8">O8</option>
+
+         </optgroup>  
+         <optgroup label="BoreWell">
+         <option value="none">Pick an BoreWell</option>
+            <option value="bo1">B1</option>
+            <option value="bo2">B2</option>
+            <option value="bo3">B3</option>
+	    <option value="bo4">B4</option>
+	    <option value="bo5">B5</option>
+	    <option value="bo6">B6</option>
+	    <option value="bo7">B7</option>
+	    <option value="bo8">B8</option>
+	    <option value="bo9">B9</option>
+	    <option value="bo10">B10</option>
+         </optgroup>   
+        </select>
+        <input type=button style="background-color:#13929A;border-color:grey;color:white" value="Select" onclick="optionClicked()" />
+        </form>
+        </div>
+    </div>
+    <div id="div"></div>
+        <script src="options.js"></script>
+        <link rel="stylesheet" href="dropdown.css">
+    </body>
+</body>
+</html>
