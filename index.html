@@ -139,22 +139,33 @@ function indexClicked(){
 }
 </script>
 <script>
-function networkClicked(src1,src2,src3, width, height){
+function networkClicked(src1,src2,src3,src4,src5, width, height){
     var img1 = document.createElement("img");
     var img2 = document.createElement("img");
     var img3 = document.createElement("img");
+    var img4 = document.createElement("img");
+    var img5 = document.createElement("img");
+    var br = document.createElement("br");
     img1.src = src1;
     img2.src = src2;
     img3.src = src3;
+    img4.src = src4;
     img1.width = width;
     img1.height = height;
     img2.width = width;
     img2.height = height;
     img3.width = width;
     img3.height = height;
+    img4.width = 251;
+    img4.height = 31;
+    img5.width = 251;
+    img5.height = 31;
     document.body.appendChild(img1);
+    document.body.appendChild(br);
     document.body.appendChild(img2);
+    document.body.appendChild(img4);
     document.body.appendChild(img3);
+    document.body.appendChild(img5);
     
 }
 </script>
@@ -233,7 +244,7 @@ function networkClicked(src1,src2,src3, width, height){
     </div>
     <div class="network">
      <button style="background-color:#13929A;border-color:grey;color:white" onclick=
-    "networkClicked('network1.png', 'network2.png','network3.png',
+    "networkClicked('network1.png', 'network2.png','network3.png',alert1.png,alert2.png,
                  550, 
                  550, 
                  );this.onclick=null;">Network Operations</button> 
